@@ -1,0 +1,20 @@
+Welcome Label:
+"Welcome, " & LookUp(UserList, Username = gblUsername).Title & "."
+ 
+
+Logout Button:
+Navigate(Login)
+
+Personal Details Button:
+Navigate(UserPersonalDetails)
+
+Schedule Button:
+Navigate(UserScheduleScreen)
+
+
+Employee List Screen
+Back Button
+Back()
+ 
+Employee List Gallery
+Navigate(EmployeeDetails, ScreenTransition.None, {selectedEmployee: ThisItem})
